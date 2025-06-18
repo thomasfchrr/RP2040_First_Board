@@ -1,37 +1,37 @@
 # RP2040_First_Board
 
-## Objectif
+## Objective
 
-Je me lance dans la réalisation et l’assemblage d’une PCB, avec comme cœur de projet le microcontrôleur **RP2040**. L’idée, c’est de me faire la main sur la conception de circuits électroniques basiques (microcontrôleur + périphériques + alimentation), sur le design de PCB, et sur la programmation dans un nouvel environnement. J’utilise ce GitHub comme support de projet, pour y définir les specs techniques, et poser une base de travail claire. C’est un projet perso, rien de formel, donc je ne vais pas trop me prendre la tête sur la forme : je me concentre surtout sur le fond. Je pars avec très peu de bagage en électronique et juste quelques petites expériences. Je compte me former en ligne, en m’aidant de forums, tutos YouTube, ChatBot, et en m’inspirant de projets existants.
+I’m starting the design and assembly of a PCB centered around the **RP2040** microcontroller. The goal is to get hands-on experience with basic electronic circuit design (microcontroller + peripherals + power), PCB layout, and programming in a new environment. I’m using this GitHub repo to document the technical specs and lay out a clear working plan. This is a personal project, nothing formal, so I’m focusing more on the content than on polish. I’m coming in with very little electronics background and only some small prior experience. I plan to learn online through forums, YouTube tutorials, chatbots, and inspiration from other projects.
 
-## Charges du projet
+## Project Scope
 
-Je vais utiliser uniquement des composants que j’ai déjà en stock (récup’), ce qui m’évite de passer du temps à chercher des références ou passer commande. C’est pas forcément le meilleur choix de composants, mais c’est ce que j’ai, donc je m’en contente.
+I’m going to use only components I already have in stock (recycled), which saves me time on researching parts or ordering. This might not be the best choice of components, but it’s what I have, so I’m sticking with it.
 
-### Microcontrôleur
+### Microcontroller
 
-J’ai choisi un **RP2040**, un microcontrôleur dual-core ARM Cortex-M0+ cadencé à 133 MHz, avec 264 Ko de RAM et un contrôleur USB 1.1 intégré. Il offre 30 broches GPIO polyvalentes avec support ADC, PWM, I²C, SPI et UART. Il peut être programmé en MicroPython ou avec le Pico C SDK. Pour ce projet, je vais utiliser le Pico SDK : coder en C me permettra de gérer le dual-core librement, ce qui n’est pas possible avec MicroPython (et j’ai envie de tester ça).
+I chose the **RP2040**, a dual-core ARM Cortex-M0+ running at 133 MHz, with 264 KB of RAM and an integrated USB 1.1 controller. It offers 30 versatile GPIO pins supporting ADC, PWM, I²C, SPI, and UART. It can be programmed in MicroPython or with the Pico C SDK. For this project, I’m going with the Pico SDK: programming in C lets me freely manage the dual-core, which isn’t possible with MicroPython (and I want to experiment with that).
 
 ### Flash
 
-Je vais utiliser une **25Q64JVSIQ**, une mémoire flash SPI NOR de 64 Mbit (8 Mo), avec des vitesses de lecture jusqu’à 104 MHz. Le RP2040 n’ayant pas de flash interne, j’en ai besoin pour stocker le firmware et les données de manière non volatile.
+I’ll use a **25Q64JVSIQ**, a 64 Mbit (8 MB) SPI NOR flash memory with read speeds up to 104 MHz. Since the RP2040 has no internal flash, I need this external component to store firmware and non-volatile data.
 
-### Écran
+### Display
 
-J’ai un petit écran OLED basé sur le **SSD1306**, contrôleur compatible I²C/SPI, en 128x64 pixels monochrome. C’est compact, peu gourmand, et ça permet d’avoir une interface visuelle simple pour le projet.
+I have a small OLED screen driven by the **SSD1306**, compatible with I²C/SPI, with a 128x64 monochrome resolution. It’s compact, low-power, and provides a simple visual interface for the project.
 
-### Contrôleur de charge
+### Charge Controller
 
-J’utilise un **TP4056E**, un chargeur linéaire pour batterie Li-Ion (une seule cellule). Il intègre les protections de base (surcharge, décharge, court-circuit), et se charge via USB. C’est parfait pour alimenter simplement un montage à base de RP2040.
+I’m using the **TP4056E**, a linear charger for a single-cell Li-Ion battery. It includes basic protections (overcharge, overdischarge, short circuit) and charges via USB. It’s perfect for powering a RP2040-based setup easily.
 
-### IC de mesure
+### Measurement IC
 
-J’ai aussi un **INA3221**, un moniteur de tension/courant trois canaux (jusqu’à 26 V), avec interface I²C. Il me servira à suivre la conso des différents rails du circuit, détecter des surcharges, etc.
+I also have an **INA3221**, a three-channel high-side voltage/current monitor (up to 26 V) with I²C interface. It will help me monitor power consumption on different rails, detect overloads, and so on.
 
-### Connectique
+### Connectors
 
-Je vais intégrer un **port USB-C femelle 16 pins**, compatible USB 2.0. Il est compact, réversible, et permet de gérer à la fois l’alim 5 V et la communication USB, que ce soit pour charger via le **TP4056E** ou programmer le **RP2040**.
+I’m integrating a **16-pin female USB-C port**, compatible with USB 2.0. It’s compact and reversible, allowing both 5 V power input and USB communication — useful for charging via the **TP4056E** or programming the **RP2040**.
 
-### Autre
+### Other
 
-Je compte ajouter deux ou trois **LEDs** pour débug rapidement des états du **RP2040** (même si j’ai déjà le **SSD1306**, je trouve ça pratique et ça me permet de jouer un peu avec les GPIO). Je vais aussi prévoir quelques **boutons** pour interagir avec le projet, comme naviguer entre différentes fonctionnalités.
+I plan to add two or three **LEDs** for quick debugging of the **RP2040** states (even though I already have the **SSD1306**, LEDs are handy and let me use some GPIO pins). I’ll also add some **buttons** to interact with the project, for example to navigate between features.
