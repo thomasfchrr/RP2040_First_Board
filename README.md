@@ -18,7 +18,7 @@ I’ll use a **25Q64JVSIQ**, a 64 Mbit (8 MB) SPI NOR flash memory with read spe
 
 ### Display
 
-I have a small OLED screen driven by the **SSD1306**, compatible with I²C/SPI, with a 128x64 monochrome resolution. It’s compact, low-power, and provides a simple visual interface for the project.
+I have a small OLED screen driven by the **SSD1306**, compatible with I²C/SPI, with a 128x32 monochrome resolution. It’s compact, low-power, and provides a simple visual interface for the project.
 
 ### Charge Controller
 
