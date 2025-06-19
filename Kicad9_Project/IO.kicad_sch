@@ -1255,7 +1255,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 117.602 82.55 90)
 			(effects
 				(font
@@ -1322,7 +1322,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 168.91 58.1152 0)
 			(effects
 				(font
@@ -1374,7 +1374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a87277c-1abf-4b6d-8fdd-dd070dbb7ce2")
-		(property "Reference" "D1"
+		(property "Reference" "D5"
 			(at 123.19 71.4374 90)
 			(effects
 				(font
@@ -1392,7 +1392,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 119.38 71.12 0)
 			(effects
 				(font
@@ -1437,7 +1437,7 @@
 		(instances
 			(project ""
 				(path "/f0c57335-1044-469b-b8e4-ad3058badde6/80eb0d66-cbc0-4b52-a59a-09c2f6bd8c16"
-					(reference "D1")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -1534,7 +1534,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 168.91 108.9152 0)
 			(effects
 				(font
@@ -1602,7 +1602,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 185.42 52.578 90)
 			(effects
 				(font
@@ -1736,7 +1736,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 185.42 103.378 90)
 			(effects
 				(font
@@ -2002,7 +2002,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 168.91 135.5852 0)
 			(effects
 				(font
@@ -2138,7 +2138,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 185.42 77.978 90)
 			(effects
 				(font
@@ -2271,7 +2271,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 168.91 83.5152 0)
 			(effects
 				(font
@@ -2475,7 +2475,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 185.42 128.778 90)
 			(effects
 				(font
