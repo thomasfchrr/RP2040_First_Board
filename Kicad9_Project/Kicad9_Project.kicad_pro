@@ -411,6 +411,26 @@
     [
       "f0c57335-1044-469b-b8e4-ad3058badde6",
       "Root"
+    ],
+    [
+      "d75cd807-c6ce-48c0-93f0-b274e72060cb",
+      "Power"
+    ],
+    [
+      "2a459ddc-88d0-41a2-b93d-eb043f50bc6c",
+      "MCU"
+    ],
+    [
+      "0f4495ec-0f37-4475-ba6c-db379c8d7d9c",
+      "Display"
+    ],
+    [
+      "812ff050-97eb-4e59-933a-587a6f201885",
+      "Monitoring"
+    ],
+    [
+      "80eb0d66-cbc0-4b52-a59a-09c2f6bd8c16",
+      "IO"
     ]
   ],
   "text_variables": {}
