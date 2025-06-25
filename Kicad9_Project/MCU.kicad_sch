@@ -6958,7 +6958,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 30.48 180.34 0)
 			(effects
 				(font
@@ -9045,7 +9045,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2"
 			(at 19.05 59.69 0)
 			(effects
 				(font
@@ -10276,7 +10276,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP2"
 			(at 219.71 82.55 0)
 			(effects
 				(font

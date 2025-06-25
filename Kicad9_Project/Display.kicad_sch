@@ -1222,7 +1222,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MyLibFootprint:OLED0.69_SSD1306"
 			(at 153.67 77.47 0)
 			(effects
 				(font
